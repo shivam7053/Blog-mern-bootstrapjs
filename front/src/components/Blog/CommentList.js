@@ -1,15 +1,13 @@
-// src/components/Comment/CommentList.js
-
+// src/components/Blog/CommentList.js
 import React from 'react';
 
 const CommentList = ({ comments }) => {
   return (
     <div>
-      <h3>Comments</h3>
+      <h4>Comments</h4>
       {comments.map((comment) => (
         <div key={comment._id}>
-          <p>{comment.content}</p>
-          {/* Display comment author, date, etc. */}
+          <p>{comment.text}</p>
         </div>
       ))}
     </div>
